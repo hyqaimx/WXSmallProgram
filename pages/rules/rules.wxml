@@ -1,0 +1,13 @@
+<!--pages/rules/rules.wxml-->
+<view class='container'>
+  <view class='rule-contain'>
+    <view class='rule-title'>关于发布商品</view>
+    <view class='rule-content'>1.请遵守国家规定，严禁发布违法犯罪内容，一经发现，本公司有权对相关内容进行删除，并封禁店铺</view>
+    <view class='rule-content'>2.本公司倡导以诚为本，以信立人的经营方式，切勿虚假宣传，售卖假冒伪劣商品，若店铺被多次投诉。本公司核实后，有权对店铺进行封禁处理</view>
+  </view>
+  <view class='rule-contain'>
+    <view class='rule-title'>关于订单款项</view>
+    <view class='rule-content'>1.下单所支付的订单金额托管在"群的店"平台</view>
+    <view class='rule-content'>2.本公司倡导以诚为本，以信立人的经营方式，切勿虚假宣传，售卖假冒伪劣商品，若店铺被多次投诉。本公司核实后，有权对店铺进行封禁处理</view>
+  </view>
+</view>

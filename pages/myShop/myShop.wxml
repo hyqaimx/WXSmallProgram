@@ -1,0 +1,80 @@
+<!--pages/myShop/myShop.wxml-->
+<import src="/theme/dist/tab/index.wxml" />
+
+<view class="container">
+  <view>
+    <template is="zan-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
+  </view>
+  <view wx:if="{{tab1.selectedId=='saleing'}}" class='saleing'>
+    <view wx:if="{{saleingThings.length==0}}" class='noThing'>
+      <image src='/src/noShop.png'></image>
+      <view class='noThing-tag'>暂时还没有上架中商品</view>
+    </view>
+    <view wx:else>
+      <block wx:for="{{saleingThings}}" wx:for-item='item' wx:key='item.id'>
+        <view class="zan-panel">
+          <view class="zan-card">
+            <view class="zan-card__thumb">
+              <image class="zan-card__img" src="{{item.url}}" mode="aspectFit"></image>
+            </view>
+            <view class="zan-card__detail">
+              <view class="zan-card__detail-row">
+                <view class="zan-card__right-col price">¥ {{item.price}}</view>
+                <view class="zan-card__left-col zan-ellipsis--l2 name">
+                  {{item.name}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-tag zan-tag--danger zan-card__right-col">{{item.discount}}</view>
+                <view class="zan-card__left-col">
+                  库存：{{item.num}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-card__left-col">{{item.saleNum}}人付款</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view wx:if="{{tab1.selectedId=='saled'}}" class='saleing'>
+    <view wx:if="{{saledThings.length==0}}" class='noThing'>
+      <image src='/src/noShop.png'></image>
+      <view class='noThing-tag'>还没有已经下架的商品</view>
+    </view>
+    <view wx:else>
+      <block wx:for="{{saledThings}}" wx:for-item='item' wx:key='item.id'>
+        <view class="zan-panel">
+          <view class="zan-card">
+            <view class="zan-card__thumb">
+              <image class="zan-card__img" src="{{item.url}}" mode="aspectFit"></image>
+            </view>
+            <view class="zan-card__detail">
+              <view class="zan-card__detail-row">
+                <view class="zan-card__right-col price">¥ {{item.price}}</view>
+                <view class="zan-card__left-col zan-ellipsis--l2 name">
+                  {{item.name}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-tag zan-tag--danger zan-card__right-col">{{item.discount}}</view>
+                <view class="zan-card__left-col">
+                  库存：{{item.num}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-card__left-col">{{item.saleNum}}人付款</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

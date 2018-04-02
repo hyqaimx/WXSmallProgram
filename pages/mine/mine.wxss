@@ -1,0 +1,22 @@
+/* pages/mine/mine.wxss */
+.container{padding: 0;}
+.container::before{content: none;}
+.mx-top-empty{width: 100%;height: 100rpx; background: linear-gradient(to bottom,#F6797B 0%,#F6797B 10%,#FCCACB 70%,#FEF1F1 100%);}
+.mx-panel{width: 90%;margin: 0 auto;box-sizing: border-box;padding: 20rpx;margin-bottom: 30rpx;background: white;}
+.mx-panel-shadow{box-shadow: 0 0 40rpx #C9C9C9;}
+.mx-panel-item{display: flex;align-items: center;}
+.touxiang{width: 120rpx;height: 120rpx;border-radius: 50%;}
+.erweima{width: 50rpx;height: 50rpx;}
+.name{flex: 1;padding-left: 20rpx;font-size: 34rpx;}
+.mx-mine-item{flex: 1;text-align: center;font-size: 32rpx;}
+.num{padding-top: 20rpx;padding-bottom: 10rpx;font-size: 34rpx;}
+.mx-mine-title{font-size: 30rpx;}
+.padding-0{padding: 0;}
+.mx-panel-top{display: flex;align-items: center;padding: 15rpx;font-size: 32rpx;position: relative;border-bottom: 1px solid #F5F5F5;}
+.mx-panel-title{flex: 1;}
+.mx-seeall{font-size: 30rpx;color: #AAA;margin-right: 50rpx;}
+.grid-contain{display: grid;grid-template-columns: 20% 20% 20% 20% 20%;padding: 30rpx 0; grid-row-gap:40rpx;border-bottom: 1px solid #F5F5F5;}
+.grid-item{text-align: center;font-size: 24rpx;color: #AAA;}
+.grid-item image{width: 50rpx;height: 50rpx;}
+.zan-cell{padding:24rpx 30rpx;}
+.zan-cell::after{content:'';position:absolute;top:0;left:0;width:200%;height:200%;transform:scale(.5);transform-origin:0 0;pointer-events:none;box-sizing:border-box;border:0 solid #e5e5e5;border-bottom-width:1px;right:0}

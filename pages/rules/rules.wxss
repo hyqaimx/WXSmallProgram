@@ -1,0 +1,8 @@
+/* pages/rules/rules.wxss */
+.container{
+  padding-top: 80rpx;
+  background: white;
+}
+.rule-contain{padding: 0 40rpx;}
+.rule-title{font-size: 30rpx;font-weight: 600;line-height: 70rpx;}
+.rule-content{font-size: 28rpx;color: #AAA;line-height: 50rpx;}

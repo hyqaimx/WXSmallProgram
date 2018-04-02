@@ -1,0 +1,40 @@
+<!--pages/mineBuy/mineBuy.wxml-->
+<view class='topTab'>
+  <block wx:for="{{buyList}}" wx:for-item='item' wx:key='item.id'>
+    <view class='tabItem {{item.active?"active":""}}' data-id='{{item.id}}' bindtap='changeTab'>{{item.name}}</view>
+  </block>
+</view>
+<view class='showInfo' wx:if="{{resInfo.length>0}}">
+  <block wx:for="{{resInfo}}" wx:for-item='item' wx:key='item.id'>
+    <view class="zan-panel">
+      <view class="zan-card">
+        <view class="zan-card__thumb">
+          <image class="zan-card__img" src="{{item.url}}" mode="aspectFit"></image>
+        </view>
+        <view class="zan-card__detail">
+          <view class="zan-card__detail-row">
+            <view class="zan-card__right-col price">¥ {{item.price}}</view>
+            <view class="zan-card__left-col zan-ellipsis--l2 name">
+              {{item.name}}
+            </view>
+          </view>
+
+          <view class="zan-card__detail-row zan-c-gray-darker">
+            <view class="zan-tag zan-tag--danger zan-card__right-col">{{item.discount}}</view>
+            <view class="zan-card__left-col">
+              库存：{{item.num}}
+            </view>
+          </view>
+
+          <view class="zan-card__detail-row zan-c-gray-darker">
+            <view class="zan-card__left-col">{{item.saleNum}}人付款</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='showNone' wx:else>
+  <image src='/src/noShop.png'></image>
+  <view class='noThing-tag'>你还没有任何订单</view>
+</view>

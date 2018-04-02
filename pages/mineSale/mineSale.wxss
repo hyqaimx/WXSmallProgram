@@ -1,0 +1,7 @@
+/* pages/mineSale/mineSale.wxss */
+.topTab{display: flex;width: 100%;align-items: center;box-shadow: 0 0 3px #DCDCDC;font-size: 28rpx;}
+.tabItem{flex: 1;text-align: center;padding: 20rpx 10rpx;}
+.active{color: #F6797B;border-bottom: 2px solid #F6797B;}
+.zan-panel{margin: 0;}
+.showNone{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center;font-size: 32rpx;}
+.showNone image{width: 160rpx;height: 160rpx;}

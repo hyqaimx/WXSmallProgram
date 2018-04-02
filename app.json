@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/msg/msg",
+    "pages/car/car",
+    "pages/mine/mine",
+    "pages/shopInfo/shopInfo",
+    "pages/myShop/myShop",
+    "pages/careShop/careShop",
+    "pages/history/history",
+    "pages/mineBuy/mineBuy",
+    "pages/mineSale/mineSale",
+    "pages/rules/rules",
+    "pages/waterBill/waterBill",
+    "pages/shopSet/shopSet"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6797B",
+    "navigationBarTitleText": "群的店",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#F34347",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"src/index.png",
+        "selectedIconPath":"src/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "iconPath": "src/msg.png",
+        "selectedIconPath": "src/msg1.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "iconPath": "src/car.png",
+        "selectedIconPath": "src/car1.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "src/mine.png",
+        "selectedIconPath": "src/mine1.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

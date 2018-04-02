@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx5fffb75b0babbea6",
+	"projectname": "qunDeDian",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "msg",
+					"pathName": "pages/msg/msg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shopInfo",
+					"pathName": "pages/shopInfo/shopInfo",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "myShop",
+					"pathName": "pages/myShop/myShop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "car",
+					"pathName": "pages/car/car",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "careShop",
+					"pathName": "pages/careShop/careShop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rules",
+					"pathName": "pages/rules/rules",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "waterBill",
+					"pathName": "pages/waterBill/waterBill",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shopSet",
+					"pathName": "pages/shopSet/shopSet",
+					"query": ""
+				}
+			]
+		}
+	}
+}

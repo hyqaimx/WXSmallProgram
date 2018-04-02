@@ -1,0 +1,36 @@
+<!--pages/waterBill/waterBill.wxml-->
+<view class='top-contain'>
+  <view class='bg-blur'></view>
+  <view class='todayIn-title'>今日收益</view>
+  <view class='todayIn-val'>0.00</view>
+  <view class='totalIn-title'>累计收益</view>
+  <view class='totalIn-val'>0.00</view>
+</view>
+<view class='waterBill'>
+  <view class='waterBill-title'>店铺账单</view>
+  <view class='waterBill-item'>
+    <block wx:for="{{waterBillItems}}" wx:for-item='item' wx:key='item.id'>
+        <view class="zan-panel">
+          <view class="zan-card">
+            <view class="zan-card__thumb">
+              <image class="zan-card__img" src="{{item.src}}" mode="aspectFit"></image>
+            </view>
+            <view class="zan-card__detail">
+              <view class="zan-card__detail-row">
+                <view class="zan-card__left-col zan-ellipsis--l2 name">
+                  {{item.name}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-card__left-col">
+                  {{item.date}}
+                </view>
+              </view>
+            </view>
+            <view class='money'>{{item.money}}</view>
+          </view>
+        </view>
+      </block>
+  </view>
+</view>

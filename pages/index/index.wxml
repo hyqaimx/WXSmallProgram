@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view>
+  <swiper autoplay="true" interval="5000" indicator-dots='true' circular="true">
+    <swiper-item>
+      <image src='http://pic.58pic.com/58pic/14/34/62/39S58PIC9jV_1024.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://img1.imgtn.bdimg.com/it/u=2865777146,4199551907&fm=214&gp=0.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='http://img.qqzhi.com/upload/img_0_4055906504D3969119696_23.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <view class='mokuaia'>
+    <view class='mokuaia_a zhongxian'>
+      <image src='/src/tianjia.png'></image>
+      <text>创建新店</text>
+    </view>
+    <view class='mokuaia_b'>
+      <image src='/src/tupiantianjia.png'></image>
+      <text>发布宝贝</text>
+    </view>
+  </view>
+  <view class='mokuaib'>
+    <image src='/src/tubiao.png' class='mokuaib_img'></image>
+    <view class='mokuai_text'>
+      <text>标题</text>
+      <view class='mokuai_texta'>
+        <text>文字内容</text>
+      </view>
+    </view>
+  </view>
+</view>

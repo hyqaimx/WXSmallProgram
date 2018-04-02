@@ -1,0 +1,91 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+  <view class='mx-top-empty'></view>
+  <view class='mx-panel mx-panel-shadow' style='margin-top: -50rpx;'>
+    <view class='mx-panel-item'>
+      <image class='touxiang' src='/src/copy6.png' bindtap='toDetail'></image>
+      <view class='name' bindtap='toDetail'>骁</view>
+      <image class='erweima' src='/src/erweima.png'></image>
+    </view>
+    <view class='mx-panel-item'>
+      <view class='mx-mine-item'>
+        <navigator url="/pages/myShop/myShop">
+          <view class='num'>0</view>
+          <view class='mx-mine-title'>我的宝贝</view>
+        </navigator>
+      </view>
+      <view class='mx-mine-item'>
+        <navigator url='/pages/careShop/careShop'>
+          <view class='num'>0</view>
+          <view class='mx-mine-title'>店铺关注</view>
+        </navigator>
+      </view>
+      <view class='mx-mine-item'>
+        <navigator url='/pages/history/history'>
+          <view class='num'>0</view>
+          <view class='mx-mine-title'>我的足迹</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='mx-panel padding-0'>
+    <view class='mx-panel-top'>
+      <view class='mx-panel-title'>我买的</view>
+      <view class='mx-seeall'>
+        <navigator url='/pages/mineBuy/mineBuy?item=1'>查看全部</navigator>
+      </view>
+      <view class="zan-arrow"></view>
+    </view>
+    <view class='mx-panel-content'>
+      <view class='grid-contain'>
+        <block wx:for="{{buyList}}" wx:for-item='item' wx:for-index='idx' wx:key="item.id">
+          <view class='grid-item item{{idx+1}}'>
+            <navigator url='/pages/mineBuy/mineBuy?item={{item.id}}'>
+              <image src='{{item.src}}'></image>
+              <view class=''>{{item.name}}</view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='mx-panel padding-0'>
+    <view class='mx-panel-top'>
+      <view class='mx-panel-title'>我卖的</view>
+      <view class='mx-seeall'>
+        <navigator url='/pages/mineSale/mineSale?item=1'>查看全部</navigator>
+      </view>
+      <view class="zan-arrow"></view>
+    </view>
+    <view class='mx-panel-content'>
+      <view class='grid-contain'>
+        <block wx:for="{{saleList}}" wx:for-item='item' wx:for-index='idx' wx:key="item.id">
+          <view class='grid-item item{{idx+1}}'>
+            <navigator url='/pages/mineSale/mineSale?item={{item.id}}'>
+              <image src='{{item.src}}'></image>
+              <view class=''>{{item.name}}</view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+      <view class="zan-cell zan-cell--access" bindtap='toMyShop'>
+        <view class="zan-cell__bd">宝贝管理</view>
+        <view class="zan-cell__ft"></view>
+      </view>
+      <view class="zan-cell zan-cell--access" bindtap='toWaterBill'>
+        <view class="zan-cell__bd">店铺流水</view>
+        <view class="zan-cell__ft"></view>
+      </view>
+      <view class="zan-cell zan-cell--access" bindtap='toShopSet'>
+        <view class="zan-cell__bd">店铺设置</view>
+        <view class="zan-cell__ft"></view>
+      </view>
+    </view>
+  </view>
+  <view class='mx-panel padding-0'>
+    <view class="zan-cell zan-cell--access" bindtap='toRules'>
+      <view class="zan-cell__bd">买卖规则</view>
+      <view class="zan-cell__ft"></view>
+    </view>
+  </view>
+</view>

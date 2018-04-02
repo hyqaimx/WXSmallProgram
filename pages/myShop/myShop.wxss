@@ -1,0 +1,11 @@
+/* pages/myShop/myShop.wxss */
+.container{padding: 0;}
+.noThing{padding-top: 400rpx;text-align: center;}
+.noThing image{width: 140rpx;height: 140rpx;margin: 0 auto;}
+.noThing-tag{font-size: 32rpx;color: #AAA;text-align: center;}
+.zan-panel{margin-top: 0;}
+.zan-tag{margin-right: 5rpx;}
+.price{color: #F34347;font-weight: 600;}
+.name{font-weight: 600;}
+.zan-c-gray-darker{overflow: hidden;white-space: nowrap; text-overflow: ellipsis;}
+.zan-card{padding: 5px 10px;}

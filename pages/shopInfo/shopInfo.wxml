@@ -1,0 +1,51 @@
+<!--pages/shopInfo/shopInfo.wxml-->
+<view class='top-contain'>
+  <view class='top-search'>
+    <input type='text' placeholder='搜索' placeholder-class='zan-icon zan-icon-search' placeholder-style='text-align:center;' confirm-type='搜索'>
+    </input>
+    <view class='right-types zan-icon zan-icon-wap-nav'></view>
+  </view>
+  <view class='shopInfo'>
+    <view class='shopInfo-url'>
+      <image src='/src/copy6.png'></image>
+    </view>
+    <view class='shopInfo-name'>骁的店</view>
+  </view>
+</view>
+<view class='main'>
+  <view wx:if="{{shops.length>0}}" class='hasThing'>
+    <view class='shop-title'>店铺商品</view>
+    <block wx:for="{{shops}}" wx:for-item='item' wx:key='item.id'>
+        <view class="zan-panel">
+          <view class="zan-card">
+            <view class="zan-card__thumb">
+              <image class="zan-card__img" src="{{item.url}}" mode="aspectFit"></image>
+            </view>
+            <view class="zan-card__detail">
+              <view class="zan-card__detail-row">
+                <view class="zan-card__right-col price">¥ {{item.price}}</view>
+                <view class="zan-card__left-col zan-ellipsis--l2 name">
+                  {{item.name}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-tag zan-tag--danger zan-card__right-col">{{item.discount}}</view>
+                <view class="zan-card__left-col">
+                  库存：{{item.num}}
+                </view>
+              </view>
+
+              <view class="zan-card__detail-row zan-c-gray-darker">
+                <view class="zan-card__left-col">{{item.saleNum}}人付款</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+  </view>
+  <view wx:else class='noThing'>
+    <image src='/src/noShop.png'></image>
+    <view class='noThing-tag'>该店铺还没有上架商品</view>
+  </view>
+</view>

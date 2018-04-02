@@ -1,0 +1,47 @@
+<!--pages/car/car.wxml-->
+<view>
+  <view class='shangpuxiangqing' wx:if="{{hasThing}}">
+    <view class='shangpuxiangqing_a'>
+        <button size="mini" class='button_quanbu' bindtap='checkAll'>全选</button>
+        <button size='mini' class='button_biaoji' bindtap='checkNone'>取消选择</button>
+        <button size='mini' class='button_biaoji' bindtap='checkInvert'>反选</button>
+    </view>
+    <block wx:for="{{carThings}}" wx:for-item="item" wx:key="item.id">
+      <view class='shangpingxiangqing'>
+        <view class='shangpingxiangqing_a'>
+          <image class='shangpingxiangqing_img' src='{{item.src}}'></image>
+        </view>
+        <view class='shangpingxiangqing_b'>
+          <text class='shangpingxiangqing_biaoti'>{{item.name}}</text>
+          <text class='shangpingxiangqing_text'>{{item.content}}</text>
+          <view class='shangpingjiage'>
+            <text>￥{{item.price}}</text>
+          </view>
+        </view>
+        <view class='shangpingxiangqing_c' bindtap='checkOne' data-id='{{item.id}}'>
+          <view class='checkbox {{item.checked?"checked":""}}'></view>
+        </view>
+      </view>
+    </block>
+    <view class='settlement'>
+      <view class="zan-row">
+        <view class="zan-col zan-col-10">
+          <view class='total-price'>合计: <text>￥{{totalPrice}}</text></view>
+        </view>
+        <view class='zan-col zan-col-7'>
+          <view class='deleteBtn' bindtap='deleteCar'>删除</view>
+        </view>
+        <view class="zan-col zan-col-7">
+          <view class='settleBtn' bindtap='settle'>结算({{num?num:0}})</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class='false_jiemian'>
+    <view>
+      <image src='/src/gouwuche.png' class='false_img'></image>
+    </view>
+    <view class='false_zi'>购物车空空如也</view>
+    <view class='false_zi'>该买点东西犒赏自己了哟</view>
+  </view>
+</view>

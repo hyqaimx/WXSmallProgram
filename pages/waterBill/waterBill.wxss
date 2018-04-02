@@ -1,0 +1,17 @@
+/* pages/waterBill/waterBill.wxss */
+.container{padding: 0;}
+.top-contain{position: relative; padding: 60rpx 20px 40rpx;text-align: center;}
+.bg-blur{position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: -1; background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519809065541&di=1a53fe3c929199ee6e6d53576a7b69aa&imgtype=0&src=http%3A%2F%2Fwww.ganggg.com%2Fuploads%2Fallimg%2F150724%2F2-150H4161032463.jpg);background-size: 100% 100%;-webkit-filter: blur(3px);filter: blur(3px);-ms-filter: blur(3px);}
+.todayIn-title{font-size: 30rpx;color: #AAA;}
+.todayIn-val{font-size: 80rpx;color: #F34347;margin-bottom: 20rpx;}
+.totalIn-title{font-size: 30rpx;color: #AAA;}
+.totalIn-val{font-size: 40rpx;}
+.zan-panel{margin: 0;}
+.waterBill-title{position: relative;padding: 20rpx;padding-left: 40rpx; font-size: 32rpx;color: #F34347;}
+.waterBill-title::after{content: "";position: absolute;width: 3px;height: 40%;background: #F34347;left: 25rpx;top: 32%;}
+.zan-card{padding: 20rpx;}
+.zan-card__thumb{width: 120rpx;height: 120rpx;}
+.zan-card__img{border-radius: 50%;}
+.zan-card__detail{margin-left: 140rpx;}
+.name{font-size: 32rpx;font-weight: 600;padding-top: 10rpx;margin-bottom: 15rpx;}
+.money{position: absolute;top: 50%;right: 30rpx;transform: translateY(-50%);font-size: 32rpx;font-weight: 600;color: #F34347;}

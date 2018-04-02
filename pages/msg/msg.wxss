@@ -1,0 +1,8 @@
+/* pages/msg/msg.wxss */
+.container{padding: 0;}
+.zan-panel{margin-top: 0;}
+.zan-card{padding:10px;box-shadow: 1px 1px 0px #EEEEEE;}
+.zan-card__thumb{width: 55px;height: 55px;}
+.zan-card__detail{margin-left: 65px;}
+.zan-card__detail-row{line-height: 23px;padding-top: 2px;}
+.zan-card__left-col{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-right: 0;}
